@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+/* Generated legacy pages are styled by the old compiled Tailwind 3 CSS (legacy.css).
+   Letting v4 also generate their classes double-applies transforms (v4 `translate`
+   + v3 `transform`), so v4 must not scan them. */
+@source not "../components/legacy/pages";
+
+/* Base look (fonts, colors, resets) comes from legacy.css, ported from the old site. */
+
+button,
+a,
+[role="button"] {
+  touch-action: manipulation;
+}

@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* The legacy pages are styled by legacy.css under the (legacy) root layout. */
+@source not "../../components/legacy";
+
+@theme inline {
+  --font-sans: var(--font-prompt);
+  --color-brand: #ff5926;
+  --color-brand-alt: #ff6505;
+  --color-ink: #1d1d1d;
+  --color-ink-2: #222222;
+  --color-ink-3: #303030;
+  --color-panel: #dddddd;
+}
+
+body {
+  background: var(--color-ink);
+  color: #ffffff;
+  font-family: var(--font-prompt), Arial, Helvetica, sans-serif;
+}
+
+button,
+a,
+[role="button"] {
+  touch-action: manipulation;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
